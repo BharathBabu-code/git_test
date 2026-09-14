@@ -1,0 +1,11 @@
+const container=document.querySelector("#container");
+const newdiv=document.createElement("div");
+newdiv.style.backgroundColor="blue";
+newdiv.style.border="2px solid black";
+const newh=document.createElement("h1");
+newh.textContent="Im inside the new div";
+newdiv.appendChild(newh);
+const newp=document.createElement("p");
+newp.textContent="This is a new paragraph";
+newdiv.appendChild(newp);
+container.appendChild(newdiv);  
