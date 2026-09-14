@@ -8,4 +8,10 @@ newdiv.appendChild(newh);
 const newp=document.createElement("p");
 newp.textContent="This is a new paragraph";
 newdiv.appendChild(newp);
-container.appendChild(newdiv);  
+container.appendChild(newdiv); 
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", function (e) {
+  console.log(e.target);
+  e.target.style.background = "blue";
+});
+
