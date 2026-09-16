@@ -4,31 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <!-- IMPORTANT: Added 'defer' so the JS loads AFTER the HTML elements exist -->
+    <script src="script.js" defer></script> 
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>This is a heading 1</h1>
+    <h1>Rock Paper Scissors</h1>
     
-    <p>
-        Hello <strong>eveeryone!</strong>
-    </p>
-    <p>
-        <em>Byeee</em> <!-- Just a comment-->
-    </p>
+    <div id="game-controls">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
 
-    <ul>
-        <li> one</li>
-        <li> two</li>
-        <li> three</li>
-    </ul>
-
-    <ol>
-        <li> one</li>
-        <li> two</li>
-        <li> three</li>
-    </ol>
-
-        
+    <div id="results">
+        <p id="round-result">Make your choice to start!</p>
+        <p id="score">Current Score - You: 0, Computer: 0</p>
+        <h2 id="winner-announcement"></h2>
+    </div>
 </body>
 </html>
